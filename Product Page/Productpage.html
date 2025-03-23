@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="Productpage.css" />
+    <link rel="stylesheet" href="slider.css">
+    <title>StoreSmart</title>
+  </head>
+  <body>
+    <nav>
+      <div class="nav__header">
+        <div class="nav__logo">
+          <a href="Productpage.html"><em>StoreSmart</em></a>
+        </div>
+        <div class="nav__menu__btn" id="menu-btn">
+          <i class="ri-menu-line"></i>
+        </div>
+      </div>
+      <ul class="nav__links" id="nav-links">
+        <li><a href="../sign up and login/signup.html">Sign Up</a></li>
+        <li><a href="../sign up and login/login.html">Login</a></li>
+        <li><a href="../Landing page/About Us.html">About Us</a></li>
+        <li><a href="../Contact form/index.html">Contact</a></li>
+      </ul>
+      <div class="nav__btns">
+        <button class="btn"><i class="ri-search-line"></i></button>
+        <button class="btn"><i class="ri-shopping-bag-line"></i></button>
+      </div>
+    </nav>
+    <div class="home-bg">
+
+      <section class="home">
+      
+         <div class="swiper home-slider">
+         
+         <div class="swiper-wrapper">
+      
+            <div class="swiper-slide slide">
+               <div class="image">
+                  <img src="images/home-img-.png" alt="">
+               </div>
+               <div class="content">
+                  <span>Bridge The Gap!</span>
+                  <h3>Direct link for faster renting.</h3>
+                  
+               </div>
+            </div>
+      
+            <div class="swiper-slide slide">
+               <div class="image">
+                  <img src="images/home-img-.png" alt="">
+               </div>
+               <div class="content">
+                  <span>Space Made Simple!</span>
+                  <h3>Find Your ideal Warehouse easily.</h3>
+                  
+               </div>
+            </div>
+      
+            <div class="swiper-slide slide">
+               <div class="image">
+                  <img src="images/home-img-.png" alt="">
+               </div>
+               <div class="content">
+                  <span>Unlock Your Storage!</span>
+                  <h3>Perfect Space for Your Needs.</h3>
+                  
+               </div>
+            </div>
+      
+         </div>
+      
+            <div class="swiper-pagination"></div>
+      
+         </div>
+      
+      </section>
+      
+      </div>
+      
+      <section class="category">
+      
+         <h1 class="heading">Simplify Your search</h1>
+      
+         <div class="swiper category-slider">
+      
+         <div class="swiper-wrapper">
+      
+         <a href="category.php?category=laptop" class="swiper-slide slide">
+            <img src="images/customer-service.png" alt="">
+            <h3>General Purpose</h3>
+         </a>
+      
+         <a href="category.php?category=tv" class="swiper-slide slide">
+            <img src="images/temperature.png" alt="">
+            <h3>Climate Controlled</h3>
+         </a>
+      
+         <a href="category.php?category=camera" class="swiper-slide slide">
+            <img src="images/manufacture.png" alt="">
+            <h3>Manufacturing Warehouse</h3>
+         </a>
+      
+         <a href="category.php?category=mouse" class="swiper-slide slide">
+            <img src="images/warehouse.png" alt="">
+            <h3>Self-Storage Warehouse</h3>
+         </a>
+      
+         <a href="category.php?category=fridge" class="swiper-slide slide">
+            <img src="images/wholesaler.png" alt="">
+            <h3>Retail Warehouse</h3>
+         </a>
+      
+         <a href="category.php?category=washing" class="swiper-slide slide">
+            <img src="images/distribution.png" alt="">
+            <h3>Distribution Center</h3>
+         </a>
+      
+         </div>
+      
+         <div class="swiper-pagination"></div>
+      
+         </div>
+      
+      </section>
+      
+      <section class="home-products">
+      
+         <h1 class="heading">Latest products</h1>
+      
+         <div class="swiper products-slider">
+      
+         <div class="swiper-wrapper">
+      
+         <form action="" method="post" class="swiper-slide slide">
+            <input type="hidden" name="pid" value="">
+            <input type="hidden" name="name" value="">
+            <input type="hidden" name="price" value="">
+            <input type="hidden" name="image" value="">
+            <button class="ri ri-heart-fill" type="submit" name="add_to_wishlist"></button>
+            <a href="quick_view.php?pid=" class="ri ri-eye-fill"></a>
+            <img src="uploaded_img/" alt="">
+            <div class="name"></div>
+            <div class="flex">
+               <div class="price"><span>Birr</span><span>:</span></div>
+               <input type="number" name="qty" class="qty" min="1" max="99" onkeypress="if(this.value.length == 2) return false;" value="1">
+            </div>
+            <input type="submit" value="add to cart" class="btn" name="add_to_cart">
+         </form>
+      
+         </div>
+      
+         <div class="swiper-pagination"></div>
+      
+         </div>
+      
+      </section>
+      <footer class="footer">
+
+         <section class="grid">
+      
+            <div class="box">
+               <h3>Quick links</h3>
+               <a href="Productpage.html"> <i class="ri-arrow-right-fill"></i> Home</a>
+               <a href="../Landing page/About Us.html"> <i class="ri-arrow-right-fill"></i> About</a>
+               <!-- <a href="shop.php"> <i class="ri-arrow-right-fill"></i> Shop</a> -->
+               <a href="../Contact form/index.html"> <i class="ri-arrow-right-fill"></i> Contact</a>
+            </div>
+      
+            <div class="box">
+               <h3>Extra links</h3>
+               <a href="../sign up and login/login.html"> <i class="ri-arrow-right-fill"></i> Login</a>
+               <a href="../sign up and login/signup.html"> <i class="ri-arrow-right-fill"></i> Sign Up</a>
+               <!-- <a href="cart.php"> <i class="ri-arrow-right-fill"></i> Cart</a> -->
+               <!-- <a href="orders.php"> <i class="ri-arrow-right-fill"></i> Orders</a> -->
+            </div>
+      
+            <div class="box">
+               <h3>Contact Us.</h3>
+               <a href="tel:925492005"><i class="ri-phone-fill"></i> +251 925 492 005</a>
+               <a href="tel:704919341"><i class="ri-phone-fill"></i> +251 704 919 341</a>
+               <a href="mailto:leamlakmintesinot6@gmail.com"><i class="ri-mail-open-fill"></i> StoreSmart.com</a>
+               <a href="https://maps.app.goo.gl/1s323bDruw4R72KG7"><i class="ri-map-pin-fill"></i>  Addis Ababa, Ethiopia </a>
+            </div>
+      
+            <div class="box">
+               <h3>Follow Us</h3>
+               <a href="https://t.me/LeamlakMI" target="_blank"><i class="ri-telegram-fill"></i>Telegram</a>
+               <a href="https://www.instagram.com/_leamlak_" target="_blank"><i class="ri-instagram-fill"></i>Instagram</a>
+               <a href="https://www.linkedin.com/in/leamlak-mintesinot-48b31b2a8?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><i class="ri-linkedin-fill"></i>Linkedin</a>
+            </div>
+      
+         </section>
+      
+         <div class="credit">&copy; copyright 2024 by <span>StoreSmart</span> | all rights reserved!</div>
+      
+      </footer>
+    
+     
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="productpage.js"></script>
+    <script src="slider.js"></script>
+  </body>
+</html>
+
+<script>
+  var swiper = new Swiper(".home-slider", {
+   loop:true,
+   spaceBetween: 20,
+   pagination: {
+      el: ".swiper-pagination",
+      clickable:true,
+    },
+});
+
+var swiper = new Swiper(".category-slider", {
+   loop:true,
+   spaceBetween: 20,
+   pagination: {
+      el: ".swiper-pagination",
+      clickable:true,
+   },
+   breakpoints: {
+      0: {
+         slidesPerView: 2,
+       },
+      650: {
+        slidesPerView: 3,
+      },
+      768: {
+        slidesPerView: 4,
+      },
+      1024: {
+        slidesPerView: 5,
+      },
+   },
+});
+
+var swiper = new Swiper(".products-slider", {
+   loop:true,
+   spaceBetween: 20,
+   pagination: {
+      el: ".swiper-pagination",
+      clickable:true,
+   },
+   breakpoints: {
+      550: {
+        slidesPerView: 2,
+      },
+      768: {
+        slidesPerView: 2,
+      },
+      1024: {
+        slidesPerView: 3,
+      },
+   },
+});
+
+
+</script>
